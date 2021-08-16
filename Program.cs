@@ -59,12 +59,10 @@ namespace Lesson5_15_08_2021
             Console.WriteLine("Введите размер массива");
             int N = Convert.ToInt32(Console.ReadLine());
             int[] array = new int[N];
-
-
+            Console.WriteLine($"Введите {N} числа");
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = i;
-                Console.WriteLine(array[i]);
+                array[i] = Convert.ToInt32(Console.ReadLine());
             }
 
             Console.WriteLine("Введите индекс массива");
